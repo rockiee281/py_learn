@@ -18,4 +18,3 @@ if __name__ == '__main__':
     sys.setrecursionlimit(100000)
     result = calculate(1024, 48)
     print result
-
