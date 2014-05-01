@@ -14,6 +14,10 @@ def search_val(val):
     @param val:
     @return: None if not match, index if match
     """
+    if not isinstance(val, int) or val < 0:
+        print 'ilegal number %s' % val
+        return
+
     row = len(a)
     col = len(a[0])
     for i in xrange(row):
@@ -29,9 +33,9 @@ def search_val(val):
                     return i, j
                 else:
                     break
-    return None
+    return
 
 
 for array in a:
     print array
-print search_val(7)
+print search_val(2.6)
